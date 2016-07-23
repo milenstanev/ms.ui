@@ -1,0 +1,57 @@
+<div><h3>Title</h3><p>Content adasda sd ad a sd asd</p></div>
+
+<form>
+  <div ng-repeat="(key, items) in ctrl.form2 track by key">
+
+    <div ng-if="items.type === 'checkbox'" class="checkbox">
+      <div>
+        <label>
+          <input type="checkbox" name="" ng-model="items.ngModel">
+          {{items.labelText}}
+        </label>
+      </div>
+    </div>
+
+    <div ng-if="items.type === 'radio'">
+      <label for="{{items.id}}_{{$index}}" class="{{items.labelClass}}">
+        {{items.labelText}}
+      </label>
+      <div class="radio margin-top-0"
+           ng-repeat="radio in items.radioOptions">
+        <label>
+          <input type="radio" name="" ng-model="items.ngModel" value="{{radio.value}}">
+          {{radio.labelText}}
+        </label>
+      </div>
+    </div>
+
+    <div ng-if="items.type === 'select'">
+      <label for="{{items.id}}_{{$index}}"
+             class="{{items.labelClass}}"
+             ng-if="items.labelText">
+        {{items.labelText}}
+      </label>
+      <select class="form-control"
+              ng-options="item as item.text for item in items.selectOptions"
+              ng-model="items.ngModel"></select>
+    </div>
+
+    <div ng-if="items.type === 'text' || items.type === 'password' || items.type === 'email'" class="form-group">
+      <label for="{{items.id}}_{{$index}}" class="{{items.labelClass}}">
+        {{items.labelText}} {{items.qwerty}}
+      </label>
+      <input type="{{items.type}}"
+             class="{{items.class}} form-control"
+             id="{{items.id}}_{{$index}}"
+             name="{{items.name}}_{{key}}{{$index}}"
+             placeholder="{{items.placeholder}}"
+             ng-model="items.ngModel"
+             ng-required="items.isRequired"
+             ng-pattern="items.ngPattern">
+
+      <!--{{rows}}
+      {{formName[items.name].$error}}-->
+
+    </div>
+  </div>
+</form>

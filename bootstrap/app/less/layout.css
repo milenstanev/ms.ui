@@ -1,0 +1,60 @@
+prefix-nav-top,
+prefix-layout-content,
+prefix-nav-bottom,
+prefix-nav-left,
+prefix-content {
+  display: block;
+}
+prefix-nav-top .navbar,
+prefix-nav-bottom .navbar {
+  margin-bottom: 0 !important;
+}
+prefix-nav-top h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+prefix-layout-content {
+  position: relative;
+}
+prefix-layout-content > div.row {
+  position: relative;
+  height: 100%;
+}
+prefix-navigation,
+prefix-content {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
+prefix-navigation {
+  background: #f8f8f8;
+  border-right: 1px solid #e7e7e7;
+}
+prefix-navigation .prefix-title {
+  cursor: pointer;
+}
+prefix-navigation .prefix-title .caret {
+  color: #777d85;
+}
+prefix-navigation .prefix-title.closed .caret {
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+}
+prefix-navigation .nav-pills {
+  position: relative;
+  overflow: hidden;
+}
+prefix-navigation .nav-pills.fade {
+  height: 0px;
+}
+prefix-navigation .nav-pills.in {
+  height: auto;
+}
+prefix-navigation .nav-pills > li > a {
+  border-radius: 2px;
+}

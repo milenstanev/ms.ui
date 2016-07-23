@@ -1,0 +1,36 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "postinstall": "jspm install && git clone https://github.com/twbs/bootstrap"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "jspm": "^0.16.34"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.5.7",
+      "angular-route": "github:angular/bower-angular-route@^1.5.5",
+      "css": "github:systemjs/plugin-css@^0.1.23",
+      "json": "github:systemjs/plugin-json@^0.1.2",
+      "milenstanev/msw.core": "github:milenstanev/msw.core@master",
+      "milenstanev/msw.layout": "github:milenstanev/msw.layout@master",
+      "text": "github:systemjs/plugin-text@^0.0.8"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "devDependencies": {
+    "babel-preset-es2016": "^6.0.11"
+  }
+}
