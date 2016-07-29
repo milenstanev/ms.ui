@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>UI next</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <style>
-        .ng-cloak, img.pre-loader {
-            display: none;
-        }
-        img.pre-loader.ng-cloak {
-            display: block;
-        }
-    </style>
-    <link rel="stylesheet" href="app/less/app.default.css">
+  <meta charset="UTF-8">
+  <title>UI next</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <style>
+    .ng-cloak, img.pre-loader {
+      display: none;
+    }
+    img.pre-loader.ng-cloak {
+      display: block;
+    }
+  </style>
+  <link rel="stylesheet" href="app/less/app.default.css">
 </head>
 <body ng-app="prefix.app" style="overflow: hidden">
 
+<ng-view></ng-view>
+
 <div id="appPlaceholder" class="ng-cloak">
-    <prefix-layout></prefix-layout>
+  <prefix-layout></prefix-layout>
 </div>
 
 <img src="app/images/gears.svg" class="pre-loader ng-cloak">
@@ -27,7 +29,18 @@
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
 <script>
-    System.import('./app/app.js');
+  System.import('./app/app.js');
 </script>
+
+
+<!--<script>
+  (function(){
+    document.body.addEventListener('touchmove', function(event) {
+      event.preventDefault();
+      console.log(event);
+    }, false);
+  })()
+</script>-->
+
 </body>
 </html>

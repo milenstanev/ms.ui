@@ -17,12 +17,16 @@ System.config({
 
   map: {
     "angular": "github:angular/bower-angular@1.5.7",
+    "angular-resource": "npm:angular-resource@1.5.8",
     "angular-route": "github:angular/bower-angular-route@1.5.7",
+    "angular-ui-router": "npm:angular-ui-router@0.3.1",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
     "css": "github:systemjs/plugin-css@0.1.23",
     "json": "github:systemjs/plugin-json@0.1.2",
+    "laurelnaiad/angular-couch-potato": "github:laurelnaiad/angular-couch-potato@0.2.3",
+    "lodash": "npm:lodash@4.14.0",
     "milenstanev/msw.core": "github:milenstanev/msw.core@master",
     "milenstanev/msw.layout": "github:milenstanev/msw.layout@master",
     "text": "github:systemjs/plugin-text@0.0.8",
@@ -39,13 +43,17 @@ System.config({
       "path-browserify": "npm:path-browserify@0.0.0"
     },
     "github:jspm/nodelibs-process@0.1.2": {
-      "process": "npm:process@0.11.5"
+      "process": "npm:process@0.11.6"
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "npm:angular-ui-router@0.3.1": {
+      "angular": "npm:angular@1.5.8",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:assert@1.4.1": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -76,7 +84,7 @@ System.config({
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
-    "npm:process@0.11.5": {
+    "npm:process@0.11.6": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "vm": "github:jspm/nodelibs-vm@0.1.0"

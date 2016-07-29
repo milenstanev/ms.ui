@@ -5,7 +5,7 @@ ADD ./bootstrap /bootstrap
 #RUN apt-get update
 ENV foo /bootstrap
 WORKDIR ${foo}
-#RUN npm i -g gulp
+RUN npm i -g jspm
 RUN npm install
 EXPOSE 3000
 

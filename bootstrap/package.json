@@ -17,9 +17,13 @@
   "jspm": {
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.5.7",
+      "angular-resource": "npm:angular-resource@^1.5.8",
       "angular-route": "github:angular/bower-angular-route@^1.5.5",
+      "angular-ui-router": "npm:angular-ui-router@^0.3.1",
       "css": "github:systemjs/plugin-css@^0.1.23",
       "json": "github:systemjs/plugin-json@^0.1.2",
+      "laurelnaiad/angular-couch-potato": "github:laurelnaiad/angular-couch-potato@^0.2.3",
+      "lodash": "npm:lodash@^4.14.0",
       "milenstanev/msw.core": "github:milenstanev/msw.core@master",
       "milenstanev/msw.layout": "github:milenstanev/msw.layout@master",
       "text": "github:systemjs/plugin-text@^0.0.8"
