@@ -6,6 +6,7 @@ ADD ./bootstrap /bootstrap
 ENV foo /bootstrap
 WORKDIR ${foo}
 RUN npm i -g jspm
+RUN npm i -g gulp
 RUN npm install
 EXPOSE 3000
 
